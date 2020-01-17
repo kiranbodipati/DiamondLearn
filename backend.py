@@ -27,3 +27,9 @@ database = {
          ,
 
     }
+
+def search(term):
+    if term.lower in database:
+        return database[term.lower]
+    else:
+        return "sorry Term not found"
