@@ -49,6 +49,15 @@ tick()
 
 
 
+add_image=PhotoImage(file= "addtermsbutton.png")
+add_image1=add_image.subsample(4,4)
+enter_image=PhotoImage(file="enterbutton.png")
+enter_image1=enter_image.subsample(4,4)
+search_image=PhotoImage(file="searchbutton.png")
+search_image1=search_image.subsample(4,4)
+searchterm_image=PhotoImage(file="searchtermbutton.png")
+searchterm_image1=searchterm_image.subsample(4,4)
+
 
 
 def window1_1_1():
@@ -113,7 +122,7 @@ def window1_2():
     term = StringVar()
     Entry(window,textvariable=term).place(x=500,y=350,width=120,height=50)
     Label(window,text="I want to know the meaning of : ").place(x=500, y=300)
-    Button(window,text="Search",command= window1_2_1).place(x=700,y=350)
+    Button(window,text=search_image1,command= window1_2_1).place(x=700,y=350)
     c.pack()
 
 
@@ -129,9 +138,9 @@ def window1():
     background_label1 = Label(window, image=filename1)
     background_label1.place(x=0, y=0, relwidth=1, relheight=1)
     background_label1.image = filename1
-    add_term= Button(window, text="add term",command=window1_1)
+    add_term= Button(window, text=add_image1,command=window1_1)
     add_term.place(x=500,y=300)
-    search_term=Button(window,text="search term",command=window1_2)
+    search_term=Button(window,text=searchterm_image1,command=window1_2)
     search_term.place(x=800,y=300)
     Label(window,text="Hello  " + name.get(),font="50",fg="black").place(x=300,y=200)
     C.pack()
@@ -144,7 +153,7 @@ level=StringVar()
 levelEntered=Entry(window,width=15,textvariable=level)
 levelEntered.place(x=1000,y=550)
 
-im_ready_button = Button(window, text="I'm ready",  command=window1)
+im_ready_button = Button(window, text=enter_image1,  command=window1)
 im_ready_button.place(x=1000, y=600)
 
 
