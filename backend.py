@@ -24,11 +24,11 @@ database = {
         ,
     "chemistry":
         "the branch of science concerned with the substances of which matter is composed, the investigation of their properties and reactions, and the use of such reactions to form new substances."
-         ,
 
     }
 
 def search_term(term):
+    print (term)
     if term.lower() in database:
         return database[term.lower()]
     else:
