@@ -28,8 +28,15 @@ database = {
 
     }
 
-def search(term):
-    if term.lower in database:
-        return database[term.lower]
+def search_term(term):
+    if term.lower() in database:
+        return database[term.lower()]
     else:
         return "sorry Term not found"
+
+def add_term(term, defn):
+    if term.lower() in database:
+        return "Term already Exists!"
+    else:
+        database[term.lower()]=defn
+        return "term added"
