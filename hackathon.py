@@ -12,7 +12,7 @@ window= Tk()
 window.title("Welcome to study system")
 window.geometry("1400x800")
 C = Canvas(window, bg="blue", height=400, width=500)
-filename = PhotoImage(file ="C:\\Users\\CUI CHENLING\\Desktop\\hackathon\\diamond.png")
+filename = PhotoImage(file ="diamond.png")
 background_label = Label(window, image=filename)
 background_label.place(x=0, y=0, relwidth=1, relheight=1)
 Label(window, text="Name").place(x=900,y=500)
@@ -55,7 +55,7 @@ def window1_1_1():
     window.geometry("1400x800")
     window.title("definition")
     c = Canvas(window, bg="blue", height=400, width=500)
-    filename1_1_1 = PhotoImage(file="C:\\Users\\CUI CHENLING\\Desktop\\hackathon\\bg.png")
+    filename1_1_1 = PhotoImage(file="bg.png")
     background_label1_1_1= Label(window, image=filename1_1_1)
     background_label1_1_1.place(x=0, y=0, relwidth=1, relheight=1)
     background_label1_1_1.image = filename1_1_1
@@ -73,7 +73,7 @@ def window1_2_1():
     window.geometry("1400x800")
     window.title("Search terms")
     c = Canvas(window, bg="blue", height=400, width=500)
-    filename1_2_1 = PhotoImage(file="C:\\Users\\CUI CHENLING\\Desktop\\hackathon\\bg.png")
+    filename1_2_1 = PhotoImage("bg.png")
     background_label1_2_1 = Label(window, image=filename1_2_1)
     background_label1_2_1.place(x=0, y=0, relwidth=1, relheight=1)
     background_label1_2_1.image = filename1_2_1
@@ -84,7 +84,7 @@ def window1_1():
     window.geometry("1400x800")
     window.title("Add terms")
     c=Canvas(window,bg="blue",height=400, width=500)
-    filename1_1 = PhotoImage(file="C:\\Users\\CUI CHENLING\\Desktop\\hackathon\\bg.png")
+    filename1_1 = PhotoImage(file="bg.png")
     background_label1_1 = Label(window, image=filename1_1)
     background_label1_1.place(x=0, y=0, relwidth=1, relheight=1)
     background_label1_1.image=filename1_1
@@ -105,7 +105,7 @@ def window1_2():
     window.geometry("1400x800")
     window.title("Search terms")
     c=Canvas(window,bg="blue",height=400, width=500)
-    filename1_2= PhotoImage(file="C:\\Users\\CUI CHENLING\\Desktop\\hackathon\\bg.png")
+    filename1_2= PhotoImage(file="bg.png")
     background_label1_2 = Label(window, image=filename1_2)
     background_label1_2.place(x=0, y=0, relwidth=1, relheight=1)
     background_label1_2.image = filename1_2
@@ -124,7 +124,7 @@ def window1():
     window.geometry("1400x800")
     window.title("Activity")
     C = Canvas(window, bg="blue", height=400, width=500)
-    filename1 = PhotoImage(file="C:\\Users\\CUI CHENLING\\Desktop\\hackathon\\bg.png")
+    filename1 = PhotoImage(file="bg.png")
     background_label1 = Label(window, image=filename1)
     background_label1.place(x=0, y=0, relwidth=1, relheight=1)
     background_label1.image = filename1
